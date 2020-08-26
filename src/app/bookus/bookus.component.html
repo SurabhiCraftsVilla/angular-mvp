@@ -1,0 +1,59 @@
+<section id="book-a-product" class="book-a-product">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Book a <span>Product</span></h2>
+            <p>Happiness doesn't result from what we get but what we give. Show your love and make your occasion
+                more memorable.</p>
+        </div>
+
+        <form role="form" class="php-email-form">
+            <div class="form-row">
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                           data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                           data-rule="email" data-msg="Please enter a valid email">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone"
+                           data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="text" name="budget" class="form-control" id="budget" placeholder="Budget per gift"
+                           data-rule="minlen:2" data-msg="Please enter at least 2 chars"/>
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="number" class="form-control" name="quantity" id="quantity" placeholder="Quantity"
+                           data-rule="minlen:1" data-msg="Please enter at least 1"/>
+                    <div class="validate"></div>
+                </div>                    
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="number" class="form-control" name="otherspecifications" id="otherspecifications" placeholder="Other Specifications"
+                            data-msg="Please enter at least 10 chars">
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <div class="validate"></div>
+            </div>
+            <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your booking request was sent. We will call back or send an Email to
+                    confirm your reservation. Thank you!
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+
+    </div>
+</section>
