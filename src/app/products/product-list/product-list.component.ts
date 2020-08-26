@@ -69,7 +69,8 @@ export class ProductListComponent implements OnInit {
         }
       })
       this.stapelConfig.close.on('click', () => {
-        this.closeDetailView();
+        //this.closeDetailView();
+        window.history.back();
       })  
       this.stapelConfig.loader.remove();  
   }
