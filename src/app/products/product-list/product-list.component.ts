@@ -32,12 +32,6 @@ export class ProductListComponent implements OnInit {
           if(Object.keys(queryParam).length ==0 ){
             this.closeDetailView();
           }
-          if (this.page)
-              //this.goToPageNo(this.type, this.page);
-              console.log(this.type,this.page);
-          else
-          console.log(this.type);
-              //this.goToPage(this.type);
       });
   });    
   }
