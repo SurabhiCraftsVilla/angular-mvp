@@ -54,7 +54,7 @@ export class ProductListComponent implements OnInit {
     this.stapelConfig.stapel = this.stapelConfig.grid.stapel({
         delay: 50,
         onLoad: _ => {
-          this.stapelConfig.loader.remove()
+          
         },
         onBeforeOpen: (pileName) => {
           //this.stapelConfig.name.html(pileName)
@@ -70,7 +70,8 @@ export class ProductListComponent implements OnInit {
       })
       this.stapelConfig.close.on('click', () => {
         this.closeDetailView();
-      })    
+      })  
+      this.stapelConfig.loader.remove();  
   }
 
   closeDetailView() {
