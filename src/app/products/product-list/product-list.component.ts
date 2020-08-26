@@ -68,7 +68,7 @@ export class ProductListComponent implements OnInit {
           this.stapelConfig.close.show()
         }
       })
-      this.stapelConfig.close.on('click', function () {
+      this.stapelConfig.close.on('click', () => {
         this.closeDetailView();
       })    
   }
