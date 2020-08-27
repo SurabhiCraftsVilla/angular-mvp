@@ -4,6 +4,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { routePath } from '../app-routing.module';
 import { Routes, RouterModule } from '@angular/router';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 const routes: Routes = [{
     path: routePath.PRODUCT_LIST,
@@ -19,7 +20,8 @@ const routes: Routes = [{
   declarations: [ProductListComponent, ProductDetailsComponent],
   imports: [
     RouterModule.forChild(routes),
-    CommonModule
+    CommonModule,
+    LazyLoadImageModule
   ],
   exports: [RouterModule]
 })

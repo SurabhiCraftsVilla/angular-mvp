@@ -16,6 +16,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { TestimonalComponent } from './testimonal/testimonal.component';
 import { BestSellersComponent } from './best-sellers/best-sellers.component';
 import { ProductsModule } from './products/products.module';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ProductsModule } from './products/products.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProductsModule
+    ProductsModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
